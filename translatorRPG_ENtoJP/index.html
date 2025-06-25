@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>翻訳バトル RPG (英語から日本語)</title>
+  <style>
+    body{font-family:sans-serif;padding:20px;}
+    button{margin:5px;padding:10px 20px;}
+    #enemyHP,#playerHP{height:20px;background:#4caf50;transition:width .3s;}
+    #phraseBox{margin:20px 0;font-size:1.2em;}
+    #status{margin-top:15px;font-weight:bold;}
+    #userAnswer,#correctAnswer,#scoreLine,#feedbackLine{margin-top:8px;font-size:1.05em;}
+    #log{margin-top:15px;white-space:pre-line;}
+  </style>
+</head>
+<body>
+
+<h1>翻訳バトル RPG</h1>
+
+<div>
+  <strong>敵 HP：</strong><div id="enemyHP" style="width:100%"></div>
+  <strong>あなた HP：</strong><div id="playerHP" style="width:100%"></div>
+</div>
+
+<div id="phraseBox"> <em>「Start Battle」を押して開始</em></div>
+
+<button id="startBtn">Start Battle</button>
+<button id="speakBtn" disabled>答えを話す🎤</button>
+
+<p id="status"></p>
+<p id="userAnswer"></p>
+<p id="correctAnswer"></p>
+<p id="scoreLine"></p>
+<p id="feedbackLine"></p>
+
+<div id="log"></div>
+
+<script src="game.js"></script>
+</body>
+</html>
+

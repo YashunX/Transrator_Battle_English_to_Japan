@@ -1,0 +1,1 @@
+# Transrator_Battle_English_to_Japan
